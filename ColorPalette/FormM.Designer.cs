@@ -34,13 +34,12 @@
             this.colorWheel = new Cyotek.Windows.Forms.ColorWheel();
             this.colorEditor = new Cyotek.Windows.Forms.ColorEditor();
             this.colorEditorManager = new Cyotek.Windows.Forms.ColorEditorManager();
-            this.lightnessColorSlider = new Cyotek.Windows.Forms.LightnessColorSlider();
             this.SuspendLayout();
             // 
             // panel_color
             // 
             this.panel_color.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_color.Location = new System.Drawing.Point(433, 269);
+            this.panel_color.Location = new System.Drawing.Point(431, 259);
             this.panel_color.Name = "panel_color";
             this.panel_color.Size = new System.Drawing.Size(80, 86);
             this.panel_color.TabIndex = 6;
@@ -52,7 +51,7 @@
             this.uiButton_CopyHex.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.uiButton_CopyHex.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.uiButton_CopyHex.Font = new System.Drawing.Font("Segoe Script", 12F);
-            this.uiButton_CopyHex.Location = new System.Drawing.Point(312, 322);
+            this.uiButton_CopyHex.Location = new System.Drawing.Point(309, 319);
             this.uiButton_CopyHex.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton_CopyHex.Name = "uiButton_CopyHex";
             this.uiButton_CopyHex.RectColor = System.Drawing.Color.Black;
@@ -73,7 +72,7 @@
             this.uiButton_CopyRGB.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.uiButton_CopyRGB.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.uiButton_CopyRGB.Font = new System.Drawing.Font("Segoe Script", 12F);
-            this.uiButton_CopyRGB.Location = new System.Drawing.Point(312, 290);
+            this.uiButton_CopyRGB.Location = new System.Drawing.Point(309, 277);
             this.uiButton_CopyRGB.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton_CopyRGB.Name = "uiButton_CopyRGB";
             this.uiButton_CopyRGB.RectColor = System.Drawing.Color.Black;
@@ -89,7 +88,7 @@
             // colorWheel
             // 
             this.colorWheel.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorWheel.Location = new System.Drawing.Point(330, 21);
+            this.colorWheel.Location = new System.Drawing.Point(318, 28);
             this.colorWheel.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.colorWheel.Name = "colorWheel";
             this.colorWheel.Size = new System.Drawing.Size(183, 192);
@@ -99,12 +98,12 @@
             // colorEditor
             // 
             this.colorEditor.Font = new System.Drawing.Font("Segoe Print", 9.5F);
-            this.colorEditor.Location = new System.Drawing.Point(12, 12);
+            this.colorEditor.Location = new System.Drawing.Point(12, 9);
             this.colorEditor.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.colorEditor.Name = "colorEditor";
             this.colorEditor.Padding = new System.Windows.Forms.Padding(5);
             this.colorEditor.ShowAlphaChannel = false;
-            this.colorEditor.Size = new System.Drawing.Size(288, 346);
+            this.colorEditor.Size = new System.Drawing.Size(279, 348);
             this.colorEditor.TabIndex = 14;
             this.colorEditor.ColorChanged += new System.EventHandler(this.colorEditor_ColorChanged);
             // 
@@ -112,28 +111,19 @@
             // 
             this.colorEditorManager.ColorEditor = this.colorEditor;
             this.colorEditorManager.ColorWheel = this.colorWheel;
-            this.colorEditorManager.LightnessColorSlider = this.lightnessColorSlider;
-            // 
-            // lightnessColorSlider
-            // 
-            this.lightnessColorSlider.Location = new System.Drawing.Point(542, 12);
-            this.lightnessColorSlider.Name = "lightnessColorSlider";
-            this.lightnessColorSlider.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.lightnessColorSlider.Size = new System.Drawing.Size(45, 346);
-            this.lightnessColorSlider.TabIndex = 0;
             // 
             // FormM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 367);
+            this.ClientSize = new System.Drawing.Size(527, 364);
             this.Controls.Add(this.colorEditor);
             this.Controls.Add(this.colorWheel);
             this.Controls.Add(this.uiButton_CopyRGB);
             this.Controls.Add(this.uiButton_CopyHex);
             this.Controls.Add(this.panel_color);
-            this.Controls.Add(this.lightnessColorSlider);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormM";
             this.Text = "Color Palette";
@@ -150,7 +140,6 @@
         private Cyotek.Windows.Forms.ColorWheel colorWheel;
         private Cyotek.Windows.Forms.ColorEditor colorEditor;
         private Cyotek.Windows.Forms.ColorEditorManager colorEditorManager;
-        private Cyotek.Windows.Forms.LightnessColorSlider lightnessColorSlider;
     }
 }
 
