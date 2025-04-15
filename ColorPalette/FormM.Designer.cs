@@ -33,15 +33,14 @@
             this.uiButton_CopyRGB = new Sunny.UI.UIButton();
             this.colorWheel = new Cyotek.Windows.Forms.ColorWheel();
             this.colorEditor = new Cyotek.Windows.Forms.ColorEditor();
-            this.colorEditorManager = new Cyotek.Windows.Forms.ColorEditorManager();
             this.SuspendLayout();
             // 
             // panel_color
             // 
             this.panel_color.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_color.Location = new System.Drawing.Point(431, 259);
+            this.panel_color.Location = new System.Drawing.Point(439, 275);
             this.panel_color.Name = "panel_color";
-            this.panel_color.Size = new System.Drawing.Size(80, 86);
+            this.panel_color.Size = new System.Drawing.Size(61, 68);
             this.panel_color.TabIndex = 6;
             // 
             // uiButton_CopyHex
@@ -51,7 +50,7 @@
             this.uiButton_CopyHex.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.uiButton_CopyHex.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.uiButton_CopyHex.Font = new System.Drawing.Font("Segoe Script", 12F);
-            this.uiButton_CopyHex.Location = new System.Drawing.Point(309, 319);
+            this.uiButton_CopyHex.Location = new System.Drawing.Point(313, 317);
             this.uiButton_CopyHex.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton_CopyHex.Name = "uiButton_CopyHex";
             this.uiButton_CopyHex.RectColor = System.Drawing.Color.Black;
@@ -72,7 +71,7 @@
             this.uiButton_CopyRGB.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.uiButton_CopyRGB.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.uiButton_CopyRGB.Font = new System.Drawing.Font("Segoe Script", 12F);
-            this.uiButton_CopyRGB.Location = new System.Drawing.Point(309, 277);
+            this.uiButton_CopyRGB.Location = new System.Drawing.Point(313, 275);
             this.uiButton_CopyRGB.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton_CopyRGB.Name = "uiButton_CopyRGB";
             this.uiButton_CopyRGB.RectColor = System.Drawing.Color.Black;
@@ -88,7 +87,7 @@
             // colorWheel
             // 
             this.colorWheel.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorWheel.Location = new System.Drawing.Point(318, 28);
+            this.colorWheel.Location = new System.Drawing.Point(313, 28);
             this.colorWheel.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.colorWheel.Name = "colorWheel";
             this.colorWheel.Size = new System.Drawing.Size(183, 192);
@@ -106,11 +105,6 @@
             this.colorEditor.Size = new System.Drawing.Size(279, 348);
             this.colorEditor.TabIndex = 14;
             this.colorEditor.ColorChanged += new System.EventHandler(this.colorEditor_ColorChanged);
-            // 
-            // colorEditorManager
-            // 
-            this.colorEditorManager.ColorEditor = this.colorEditor;
-            this.colorEditorManager.ColorWheel = this.colorWheel;
             // 
             // FormM
             // 
@@ -139,7 +133,6 @@
         private Sunny.UI.UIButton uiButton_CopyRGB;
         private Cyotek.Windows.Forms.ColorWheel colorWheel;
         private Cyotek.Windows.Forms.ColorEditor colorEditor;
-        private Cyotek.Windows.Forms.ColorEditorManager colorEditorManager;
     }
 }
 
